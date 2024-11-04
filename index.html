@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Blog Kebersihan Kelas 9B</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: #121212;
+            color: #e0e0e0;
+        }
+
+        .header {
+            position: relative;
+            height: 400px;
+            overflow: hidden;
+        }
+
+        .header img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: brightness(0.7);
+        }
+
+        .header-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.8));
+        }
+
+        .header-text {
+            position: absolute;
+            bottom: 40px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: #ffffff;
+            text-align: center;
+            width: 80%;
+        }
+
+        .info-section {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding: 40px 20px;
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+        }
+
+        .info-card {
+            background: #242424;
+            border-radius: 15px;
+            padding: 20px;
+            margin: 20px;
+            width: 280px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            text-align: center;
+            border: 1px solid #333;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .info-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+        }
+
+        .content {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            color: #ffffff;
+        }
+
+        h2 {
+            color: #bb86fc;
+            margin: 30px 0 15px;
+        }
+
+        h3 {
+            color: #bb86fc;
+            margin: 15px 0;
+        }
+
+        p {
+            line-height: 1.6;
+            color: #b0b0b0;
+            margin-bottom: 15px;
+        }
+
+        ul {
+            list-style-position: inside;
+            margin-bottom: 20px;
+            color: #b0b0b0;
+        }
+
+        li {
+            margin: 10px 0;
+            line-height: 1.6;
+        }
+
+        .author {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 2px solid #333;
+            font-style: italic;
+            color: #888;
+        }
+
+        .info-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #bb86fc, #03dac6);
+            border-radius: 15px 15px 0 0;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .info-card:hover::before {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <img src="https://iili.io/2xfoBB2.jpg" alt="Sekolah" />
+        <div class="header-overlay"></div>
+        <div class="header-text">
+            <h1>Kebersihan Kelas 9B</h1>
+            <p>Menjaga Kebersihan untuk Lingkungan yang Lebih Baik</p>
+        </div>
+    </header>
+
+    <section class="info-section">
+        <div class="info-card">
+            <h3>Buang Sampah pada Tempatnya</h3>
+            <p>Mari biasakan membuang sampah di tempat yang telah disediakan</p>
+        </div>
+        <div class="info-card">
+            <h3>Piket Kelas</h3>
+            <p>Jadwal piket kelas harus dilaksanakan dengan tanggung jawab</p>
+        </div>
+        <div class="info-card">
+            <h3>Bersihkan Perabotan</h3>
+            <p>Jaga kebersihan meja, kursi, dan jendela kelas</p>
+        </div>
+    </section>
+
+    <main class="content">
+        <article>
+            <h2>Pentingnya Menjaga Kebersihan Kelas</h2>
+            <p>Kebersihan kelas merupakan tanggung jawab bersama seluruh siswa. Kelas yang bersih akan menciptakan suasana belajar yang nyaman dan kondusif. Selain itu, kebersihan juga mencerminkan kepribadian para penghuninya.</p>
+
+            <h2>Program Kebersihan Kelas 9B</h2>
+            <p>Kami telah menyusun beberapa program untuk menjaga kebersihan kelas:</p>
+            <ul>
+                <li>Jadwal piket harian</li>
+                <li>Lomba kebersihan mingguan</li>
+                <li>Bank sampah kelas</li>
+                <li>Penghijauan dalam kelas</li>
+            </ul>
+
+            <h2>Tips Menjaga Kebersihan</h2>
+            <p>Berikut beberapa tips yang bisa diterapkan untuk menjaga kebersihan kelas:</p>
+            <ul>
+                <li>Bawa tempat sampah pribadi</li>
+                <li>Lakukan piket sesuai jadwal</li>
+                <li>Rapikan meja dan kursi setelah digunakan</li>
+                <li>Tidak makan di dalam kelas</li>
+            </ul>
+
+            <div class="author">
+                <p>Ditulis oleh: Kelompok 1 Siswa Kelas 9B</p>
+                </p>
+            </div>
+        </article>
+    </main>
+</body>
+</html>
